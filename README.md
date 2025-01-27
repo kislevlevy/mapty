@@ -16,7 +16,6 @@ Mapty is a workout management app that allows users to track their running and c
 - **HTML:** Structure of the web page
 - **CSS:** Styling of the web page
 - **JavaScript:** Application logic and interactivity
-- **Parcel:** Bundling and building the project
 
 ## Skills Demonstrated
 
@@ -25,7 +24,6 @@ Mapty is a workout management app that allows users to track their running and c
 - **REST API:** Fetching and handling data from external sources
 - **Local Storage:** Storing and retrieving workout data locally
 - **GIT:** Version control and collaboration
-- **Parcel:** Module bundler and build tool
 
 ## Installation
 
@@ -39,14 +37,7 @@ To run the project locally, follow these steps:
    ```bash
    cd mapty
    ```
-3. Install the dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm start
-   ```
+3. Open `index.html` in your preferred web browser.
 
 > You can also preview the app by visiting the following link: [Mapty App](http://kislev.me/mapty)
 

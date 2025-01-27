@@ -308,25 +308,3 @@ class App {
   }
 }
 const app = new App();
-
-/*
-Future app upgrades:
-
-easy:
-edit a workout
-delete a workout
-delete all workouts
-sort workouts by selcted field
-
-medium:
-rebuild the object prototype chain
-better error and conformation messages
-
-hard:
-abillity to see all workouts at once
-ability to draw lines of workout
-
-after next lactuar:
-get geocode location by serching a string
-display weather data for workout by time and place. 
-*/

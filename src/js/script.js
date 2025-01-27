@@ -77,12 +77,9 @@ class App {
 
   // Get position with browser API:
   #getPosition() {
-    navigator.geolocation.getCurrentPosition(
-      this.#loadMap.bind(this),
-      function () {
-        alert('Could not get you GPS location');
-      }
-    );
+    navigator.geolocation.getCurrentPosition(this.#loadMap.bind(this), function () {
+      alert('Could not get you GPS location');
+    });
   }
 
   ///////////////////////////////////////////////////////////
@@ -104,7 +101,7 @@ class App {
     // Leaflet click on map event:
     this.#map.on('click', this.#showForm.bind(this));
 
-    this.#workouts.forEach(workout => this.#renderMarker(workout));
+    this.#workouts.forEach((workout) => this.#renderMarker(workout));
     document
       .getElementsByClassName('leaflet-control-attribution')
       .item(0).innerHTML = '';
@@ -121,7 +118,7 @@ class App {
   #hideForm() {
     // prettier-ignore
     const formArr = [inputDistance,inputDuration,inputCadence,inputElevation];
-    formArr.forEach(input => {
+    formArr.forEach((input) => {
       input.value = '';
       input.blur();
     });
@@ -154,9 +151,9 @@ class App {
 
     // Guard - check for valid input:
     const isValidInput = (...inputs) =>
-      inputs.every(input => Number.isFinite(input));
+      inputs.every((input) => Number.isFinite(input));
     const isPositiveInput = (...inputs) =>
-      inputs.every(input => (input > 0 ? true : false));
+      inputs.every((input) => (input > 0 ? true : false));
 
     ///////////////////////////////////////////////////////////
     // Craate object running:
@@ -282,7 +279,7 @@ class App {
 
     // find workout in workouts array
     const workout = this.#workouts.find(
-      element => element.id == workoutElement.dataset.id
+      (element) => element.id == workoutElement.dataset.id
     );
 
     // Set view for selcted worout
@@ -302,7 +299,7 @@ class App {
     const data = JSON.parse(localStorage.getItem('workouts'));
     if (!data) return;
     this.#workouts = data;
-    this.#workouts.forEach(workout => this.#renderList(workout));
+    this.#workouts.forEach((workout) => this.#renderList(workout));
   }
 
   reset() {

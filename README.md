@@ -39,7 +39,7 @@ To run the project locally, follow these steps:
    ```
 3. Open `index.html` in your preferred web browser.
 
-> You can also preview the app by visiting the following link: [Mapty App](http://kislev.me/mapty)
+> You can also preview the app by visiting the following link: [Mapty App](https://kislevlevy.github.io/mapty/)
 
 ## How to Use
 
